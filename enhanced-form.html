@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Enhanced Content & Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Assignment: Enhancing HTML5 Content & Mastering Forms</h1>
+        <p>This page demonstrates advanced HTML5 content organization and form creation.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>My Favorite Things</h2>
+            
+            <h3>A List of Favorite Foods</h3>
+            <ul>
+                <li>Pizza</li>
+                <li>Sushi</li>
+                <li>Tacos</li>
+                <li>Ice Cream</li>
+            </ul>
+
+            <h3>Ranked by Preference</h3>
+            <ol>
+                <li>Traveling</li>
+                <li>Reading</li>
+                <li>Hiking</li>
+            </ol>
+
+            <h3>Sample Data Table</h3>
+            <table>
+                <caption>Monthly Expenses</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>$1200</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td>Utilities</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>$1750</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>My Favorite Media</h2>
+            
+            <h3>An Image</h3>
+            <img src="https://via.placeholder.com/400" alt="A placeholder image for demonstration purposes">
+            <p>This is a placeholder image, showing a 400x400px gray square.</p>
+
+            <h3>An Audio Clip</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h3>A Video Clip</h3>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Registration Form</h2>
+            <p>Please fill out the form below. All fields are required unless otherwise noted.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        <small>Format: 123-456-7890</small>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <p>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required minlength="5" autocomplete="off">
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                    </p>
+
+                    <p>
+                        <label for="profileBio">Profile Bio:</label>
+                        <textarea id="profileBio" name="profileBio" rows="4" cols="50" readonly>This field is for demonstration purposes only.</textarea>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color">
+                    </p>
+                    <p>
+                        <label for="birthDate">Date of Birth:</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </p>
+                    <p>
+                        <label for="numberOfGuests">Number of Guests:</label>
+                        <input type="number" id="numberOfGuests" name="numberOfGuests" min="1" max="10" value="1">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML5 Assignment. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
